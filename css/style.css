@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    gap: 50px;
+    background: linear-gradient(to bottom right, #85f2f5, white 80%);
+    flex-wrap: wrap;
+}
+
+.toDo {
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 0 40px 30px white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.toDo__header {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.toDo__heading {
+    font-weight: 500;
+    font-size: 300%;
+}
+
+.toDo__body {
+    height: 60%;
+}
+
+.toDo__body-2-body {
+    height: 90%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.toDo__body-2-body::-webkit-scrollbar {
+    display: none;
+}
+
+.toDo__body-2 {
+    height: 100%;
+}
+
+.toDo__tasks {
+    list-style: none;
+
+}
+
+.toDo__task_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+.toDo__task_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.toDo__task_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.toDo__task_3-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 90px;
+    background: rgb(128, 216, 202);
+    border: 2px solid rgb(30, 160, 164);
+    border-radius: 8px;
+}
+
+.toDo__task_3-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 60px;
+    font-size: 11px;
+    background: rgb(228, 78, 78);
+    border: 2px solid rgb(30, 160, 164);
+    border-radius: 8px;
+}
+
+.toDo__task_3-1:hover , .toDo__task_3-2:hover{
+    cursor: pointer;
+}
+
+.toDo__body-2-footer {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.toDo__body-2-footer-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    background: rgb(128, 216, 202);
+    border: 2px solid rgb(30, 160, 164);
+    border-radius: 8px;
+}
+
+.toDo__body-2-footer-li:hover{
+    cursor: pointer;
+}
+
+.toDo__task {
+    padding: 20px;
+}
+
+.toDo__task--done {
+    text-decoration: line-through;
+}
+
+
+
+.toDo__footer {
+    height: 20%;
+
+}
+
+.toDo__input,
+.toDo__headerInput {
+    width: 100%;
+    height: 100%;
+    font-size: 80%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.toDo__input {
+    padding: 10px;
+    margin: 0px 0px 20px 10px;
+    width: 300px;
+}
+
+.toDo__input:hover{
+    cursor: pointer;
+}
+
+.toDo__input__footer {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    background: rgb(128, 216, 202);
+    margin-left: 10px;
+    border: 2px solid rgb(30, 160, 164);
+}
+
+.toDo__input__footer:hover{
+    cursor: pointer;
+}
+
+.fab {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 300%;
+    color: hsl(182, 80%, 34%);
+    background: hsl(182, 100%, 90%);
+    border: none;
+    box-shadow:
+        inset 0.0.1em #14f7ff,
+        0.0.1em #14F7FF;
+}
